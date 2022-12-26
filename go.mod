@@ -1,4 +1,4 @@
-module github.com/odra/kubeji
+module github.com/odra/cowji
 
 go 1.18
 
