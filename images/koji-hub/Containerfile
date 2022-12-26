@@ -1,8 +1,18 @@
-FROM quay.io/fedora/fedora:36
+FROM registry.fedoraproject.org/fedora:37
 
-RUN dnf install --setopt=tsflags=  -y \
-koji koji-hub koji-web koji-hub-plugins \
-curl httpd mod_ssl postgresql fedora-messaging python3-mod_wsgi
+RUN dnf install \
+--setopt=tsflags= \
+-y \
+koji \
+koji-hub \
+koji-web \
+koji-hub-plugins \
+curl \
+httpd \
+mod_ssl \
+postgresql \
+fedora-messaging \
+python3-mod_wsgi
 
 RUN rm -f /etc/kojiweb/web.conf && \
 ln -s /etc/koji-hub/kojiweb.conf /etc/kojiweb/web.conf
@@ -18,9 +28,6 @@ RUN chmod +x /entrypoint.sh /readiness.sh && \
 chown 1001:root /entrypoint.sh /readiness.sh
 
 ENV USER=1001
-
-EXPOSE 8443
+USER 1001
 
 ENTRYPOINT bash /entrypoint.sh
-
-USER 1001

@@ -2,7 +2,7 @@ SHELL := /bin/bash
 REG := quay.io
 ORG := lrossett
 NAME := koji-hub
-TAG := latest
+TAG := latest-f37
 IMAGE := ${REG}/${ORG}/${NAME}:${TAG}
 CRIO := podman
 
