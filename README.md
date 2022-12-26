@@ -1,11 +1,8 @@
-# Kubeji
+# Cowji
 
-This is an attempt to run [Koji](https://pagure.io/koji) in [Kubernetes](https://kubernetes.io),
-as native as possible.
+This is an attempt to run [Koji](https://pagure.io/koji) and related tools in a different way.
 
-It will focus on using Kubernetes based frameworks and tools, such as kubebuilder, operators and so on.
-
-It may port some upstream Koji libraries to `go` but just enough to run it in Kubernetes.
+It may port some upstream Koji libraries to `go` but just enough to enable specific third-party tools integrations.
 
 ## Project Structure
 
