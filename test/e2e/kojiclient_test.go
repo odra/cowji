@@ -6,7 +6,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	kojiclient "github.com/odra/cowji/pkg/koji-client"
+	kojiclient "github.com/odra/cowji/kojiclient"
 )
 
 func TestKojiClient(t *testing.T) {
