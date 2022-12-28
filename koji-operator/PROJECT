@@ -1,0 +1,9 @@
+domain: k8s.apps.fedoraproject.org
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: koji-operator
+repo: github.com/odra/cowji/koji-operator
+version: "3"
