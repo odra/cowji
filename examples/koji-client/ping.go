@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	kojiClient "github.com/odra/cowji/pkg/koji-client"
+	kojiClient "github.com/odra/cowji/kojiclient"
 )
 
 // KOJI_HUB_URL defaults to https://koji.fedoraproject.org/kojihub
