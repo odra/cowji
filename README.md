@@ -16,7 +16,7 @@ each other:
 * `examples`: code samples and examples;
 * `images`: container images files;
 * `kojiclient`: a "just enough" implementation of akoji client library written in go;
-* `koji-operator`: a kubernetes operator that deploys koji.
+* `koji-controller`: a kubernetes custom controller for koji.
 
 ## License
 

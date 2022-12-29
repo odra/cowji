@@ -11,15 +11,24 @@ code/fmt:
 test/clean:
 	@go clean -testcache
 
-test/unit:
+test/unit/kojiclient:
 	@go test -v ./kojiclient/.../
+
+test/unit/koji-controller:
+	@go test -v ./koji-controller/.../
+
+test/unit: test/unit/kojiclient test/unit/koji-controller
 
 test/e2e:
 	@go test -v ./test/e2e/.../
 
 test: test/clean test/unit test/e2e
 
-.PHONY: test/clean test/unit test/e2e test
+.PHONY: test
+.PHONY: test/clean
+.PHONY: test/unit
+.PHONY: test/unit/koji-controller test/unit/kojiclient
+.PHONY: test/e2e
 
 build/clean:
 	@rm -rf _build
@@ -33,4 +42,8 @@ build/koji-controller: build/prepare
 
 build: build/prepare build/koji-controller
 
-.PHONY: build/clean build/prepare build/koji-k8s-controller build
+
+.PHONY: build
+.PHONY: build/clean
+.PHONY: build/prepare
+.PHONY: build/koji-controller
