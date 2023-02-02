@@ -16,7 +16,8 @@ each other:
 * `examples`: code samples and examples;
 * `images`: container images files;
 * `kojiclient`: a "just enough" implementation of akoji client library written in go;
-* `koji-controller`: a kubernetes custom controller for koji.
+* `koji-controller`: a kubernetes custom controller for koji;
+* `kojid-cloud-scheduler`: a daemon that auto-scales kojid instances in cloud providers.
 
 ## License
 
