@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	kojiClient "github.com/odra/cowji/kojiclient"
+	kojiClient "github.com/odra/cowji/pkg/kojiclient"
 )
 
 // KOJI_HUB_URL defaults to https://koji.fedoraproject.org/kojihub
@@ -15,7 +15,7 @@ func main() {
 	// falls back to https://koji.fedoraproject.org/kojihub otherwise
 	url := os.Getenv("KOJI_HUB_URL")
 	if url == "" {
-		url = "https://koji.fedoraproject.org/kojihub"
+		url = "https://koji.stg.fedoraproject.org/kojihub"
 	}
 
 	fmt.Printf("Using %s\n", url)
