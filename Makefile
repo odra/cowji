@@ -40,7 +40,11 @@ build/koji-controller: build/prepare
 	@mkdir -p _build/bin
 	@go build -v -o _build/bin/koji-controller koji-controller/main.go
 
-build: build/prepare build/koji-controller
+build/kojid-cloud-scheduler: build/prepare
+	@mkdir -p _build/bin
+	@go build -v -o _build/bin/kojid-cloud-scheduler kojid-cloud-scheduler/main.go
+
+build: build/prepare build/koji-controller build/kojid-cloud-scheduler
 
 
 .PHONY: build
