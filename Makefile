@@ -12,7 +12,7 @@ test/clean:
 	@go clean -testcache
 
 test/unit/kojiclient:
-	@go test -v ./kojiclient/.../
+	@go test -v ./pkg/kojiclient/.../
 
 test/unit/koji-controller:
 	@go test -v ./koji-controller/.../

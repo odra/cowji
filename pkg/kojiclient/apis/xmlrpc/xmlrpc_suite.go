@@ -3,7 +3,7 @@ package xmlrpc
 import (
 	xmlrpcClient "alexejk.io/go-xmlrpc"
 	"errors"
-	"github.com/odra/cowji/kojiclient/meta"
+	"github.com/odra/cowji/pkg/kojiclient/meta"
 )
 
 type caller interface {
