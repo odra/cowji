@@ -1,4 +1,4 @@
-# Cowji
+# Kloudji
 
 This is an attempt to run [Koji](https://pagure.io/koji)
 and related tools in a different way.

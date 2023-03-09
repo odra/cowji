@@ -3,7 +3,7 @@ package main
 import (
     "os"
     "fmt"
-    version_cmd "github.com/odra/cowji/kojid-cloud-scheduler/commands/version"
+    version_cmd "github.com/odra/kloudji/kojid-cloud-scheduler/commands/version"
     "github.com/spf13/cobra"
 )
 
