@@ -4,8 +4,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/odra/cowji/pkg/kojiclient/apis/xmlrpc"
-	"github.com/odra/cowji/pkg/kojiclient/meta"
+	"github.com/odra/kloudji/pkg/kojiclient/apis/xmlrpc"
+	"github.com/odra/kloudji/pkg/kojiclient/meta"
 )
 
 // A Koji API client struct, used to consume methods from Koji Hub.

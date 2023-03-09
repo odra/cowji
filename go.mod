@@ -1,4 +1,4 @@
-module github.com/odra/cowji
+module github.com/odra/kloudji
 
 go 1.18
 

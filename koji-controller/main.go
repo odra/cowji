@@ -9,8 +9,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
 
-	"github.com/odra/cowji/koji-controller/helpers"
-    controllers "github.com/odra/cowji/koji-controller/controllers"
+	"github.com/odra/kloudji/koji-controller/helpers"
+    controllers "github.com/odra/kloudji/koji-controller/controllers"
 )
 
 func init() {

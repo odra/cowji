@@ -6,7 +6,7 @@ import (
     "sigs.k8s.io/controller-runtime/pkg/reconcile"
     "sigs.k8s.io/controller-runtime/pkg/client"
 
-    configmapCtrl "github.com/odra/cowji/koji-controller/controllers/configmap"
+    configmapCtrl "github.com/odra/kloudji/koji-controller/controllers/configmap"
 )
 
 // add one controller to a Manager

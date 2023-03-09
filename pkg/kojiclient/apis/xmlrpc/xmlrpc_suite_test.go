@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/odra/cowji/pkg/kojiclient/meta"
+	"github.com/odra/kloudji/pkg/kojiclient/meta"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )
